@@ -15,4 +15,22 @@ class PostModel {
     this.likeCount = 0,
     this.isLiked = false
   });
+
+  PostModel copyWith({
+    String? id,
+    String? authorName,
+    String? createdAt,
+    String? content,
+    int? likeCount,
+    bool? isLiked,
+  }){
+    return PostModel(
+      id: id ?? this.id,
+      authorName: authorName ?? this.authorName,
+      createdAt: createdAt ?? this.createdAt,
+      likeCount: likeCount ?? this.likeCount,
+      isLiked: isLiked ?? this.isLiked,
+      content: content ?? this.content,
+    );
+  }
 }

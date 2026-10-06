@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:social_networking_demo/features/feed/models/post_model.dart';
 import 'package:social_networking_demo/features/feed/presentations/widgets/like_button.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:social_networking_demo/features/feed/cubit/feed_cubit.dart';
 
 class PostCard extends StatelessWidget {
   final PostModel post;
@@ -59,7 +60,7 @@ class PostCard extends StatelessWidget {
               initialLikeCount: post.likeCount,
               initialIsLiked : post.isLiked,
               onLikeChanged: (isLiked){
-                debugPrint('Post ${post.id} is Liked: ${post.isLiked}');
+                context.read<FeedCubit>().toggleLikePost(post.id);
               },
             ),
           ],
