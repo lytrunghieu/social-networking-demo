@@ -1,0 +1,103 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.idea/
+.vscode/
+*.iml
+*.iws
+
+# IntelliJ
+out/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/encodings.xml
+.idea/modules/
+**/.idea/
+
+# Mac
+.DS_Store
+
+# Dart
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+/build/
+
+# Downloaded pub packages
+/packages
+
+# Flutter/Dart/Pub related
+**/doc/api/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+**/android/**/*.apk
+**/android/**/*.aab
+**/android/**/*.obj
+**/android/app/src/main/jniLibs/
+**/android/app/src/main/obj/
+**/android/app/src/debug/
+**/android/app/src/profile/
+**/android/app/src/release/
+**/android/.gradle
+**/android/local.properties
+**/android/build/
+**/android/app/build/
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/App.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner.xcworkspace/xcuserdata
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral/
+**/macos/Runner.xcworkspace/xcuserdata/
+**/macos/Pods/
+
+# Web
+**/web/
+
+# Windows
+**/windows/flutter/ephemeral/
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugins.cmake
+
+# Linux
+**/linux/flutter/ephemeral/
+**/linux/flutter/generated_plugin_registrant.cc
+**/linux/flutter/generated_plugins.cmake
+
+# Coverage
+coverage/
+
+# Symbols
+app.*.symbols
+
+# Exceptions to above rules.
+!/packages/*/pubspec.yaml
